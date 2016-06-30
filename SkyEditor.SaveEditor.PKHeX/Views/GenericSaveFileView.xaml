@@ -6,10 +6,10 @@
              xmlns:skyWPF="clr-namespace:SkyEditor.UI.WPF;assembly=SkyEditor.UI.WPF"
              xmlns:vm="clr-namespace:SkyEditor.SaveEditor.PKHeXIntegration.ViewModels"
              xmlns:local="clr-namespace:SkyEditor.SaveEditor.PKHeXIntegration"
-             TargetType="{x:Type vm:BasePkhexSaveWrapper}"
+             TargetType="{x:Type vm:GenericGeneralViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <TextBox Text="{Binding OT}" />
+        <TextBox Text="{Binding OT, UpdateSourceTrigger=PropertyChanged}" />
     </Grid>
 </skyWPF:DataBoundObjectControl>

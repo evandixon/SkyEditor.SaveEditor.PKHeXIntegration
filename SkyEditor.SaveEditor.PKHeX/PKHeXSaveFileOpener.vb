@@ -8,12 +8,9 @@ Public Class PKHeXSaveFileOpener
 
     Public Function OpenFile(fileType As TypeInfo, filename As String, provider As IOProvider) As Task(Of Object) Implements IFileOpener.OpenFile
         Dim rawFile = PKHeX.SaveUtil.getVariantSAV(provider.ReadAllBytes(filename))
-        'Todo: use a more specific view model for Gen4, Gen5, and Gen6.
-        Dim viewModel As New BasePkhexSaveWrapper
-        viewModel.Model = rawFile
-        viewModel.Filename = filename
-
-        Return Task.FromResult(DirectCast(viewModel, Object))
+        rawFile.FileName = filename
+        'Todo: read DeSmuMe footer, if applicable
+        Return Task.FromResult(DirectCast(rawFile, Object))
     End Function
 
     Public Function SupportsType(fileType As TypeInfo) As Boolean Implements IFileOpener.SupportsType
