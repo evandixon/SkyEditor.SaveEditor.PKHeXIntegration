@@ -1,5 +1,5 @@
 ﻿Namespace Views
-    Public Class GenericGen6View
+    Public Class Gen6GeneralView
 
     End Class
 End Namespace

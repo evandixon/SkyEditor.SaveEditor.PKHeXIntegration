@@ -130,4 +130,7 @@ Kaphotics and others for writing PKHeX</value>
   <data name="PluginName" xml:space="preserve">
     <value>PKHex Integration</value>
   </data>
+  <data name="TrainerName" xml:space="preserve">
+    <value>Trainer Name</value>
+  </data>
 </root>

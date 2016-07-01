@@ -25,7 +25,7 @@ Namespace My.Resources
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
-    Friend Class Language
+    Public Class Language
         
         Private Shared resourceMan As Global.System.Resources.ResourceManager
         
@@ -40,7 +40,7 @@ Namespace My.Resources
         '''  Returns the cached ResourceManager instance used by this class.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
+        Public Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
                     Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("SkyEditor.SaveEditor.PKHeXIntegration.Language", GetType(Language).Assembly)
@@ -55,7 +55,7 @@ Namespace My.Resources
         '''  resource lookups using this strongly typed resource class.
         '''</summary>
         <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
-        Friend Shared Property Culture() As Global.System.Globalization.CultureInfo
+        Public Shared Property Culture() As Global.System.Globalization.CultureInfo
             Get
                 Return resourceCulture
             End Get
@@ -68,7 +68,7 @@ Namespace My.Resources
         '''  Looks up a localized string similar to (Credits are still in the works)
         '''Kaphotics and others for writing PKHeX.
         '''</summary>
-        Friend Shared ReadOnly Property Credits() As String
+        Public Shared ReadOnly Property Credits() As String
             Get
                 Return ResourceManager.GetString("Credits", resourceCulture)
             End Get
@@ -77,7 +77,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to Gen 6 Pokémon Save Files.
         '''</summary>
-        Friend Shared ReadOnly Property Gen6SaveFiles() As String
+        Public Shared ReadOnly Property Gen6SaveFiles() As String
             Get
                 Return ResourceManager.GetString("Gen6SaveFiles", resourceCulture)
             End Get
@@ -86,7 +86,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to Evan Dixon.
         '''</summary>
-        Friend Shared ReadOnly Property PluginAuthor() As String
+        Public Shared ReadOnly Property PluginAuthor() As String
             Get
                 Return ResourceManager.GetString("PluginAuthor", resourceCulture)
             End Get
@@ -95,9 +95,18 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to PKHex Integration.
         '''</summary>
-        Friend Shared ReadOnly Property PluginName() As String
+        Public Shared ReadOnly Property PluginName() As String
             Get
                 Return ResourceManager.GetString("PluginName", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Trainer Name.
+        '''</summary>
+        Public Shared ReadOnly Property TrainerName() As String
+            Get
+                Return ResourceManager.GetString("TrainerName", resourceCulture)
             End Get
         End Property
     End Class

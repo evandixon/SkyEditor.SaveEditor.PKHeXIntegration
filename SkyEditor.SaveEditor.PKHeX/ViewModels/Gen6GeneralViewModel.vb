@@ -2,7 +2,7 @@
 Imports SkyEditor.Core.UI
 
 Namespace ViewModels
-    Public Class GenericGeneralViewModel
+    Public Class Gen6GeneralViewModel
         Inherits GenericViewModel(Of PKHeX.SaveFile)
         Implements INotifyPropertyChanged
 
