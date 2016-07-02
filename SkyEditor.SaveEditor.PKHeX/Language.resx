@@ -124,6 +124,9 @@ Kaphotics and others for writing PKHeX</value>
   <data name="Gen6SaveFiles" xml:space="preserve">
     <value>Gen 6 Pokémon Save Files</value>
   </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
   <data name="PluginAuthor" xml:space="preserve">
     <value>Evan Dixon</value>
   </data>

@@ -57,16 +57,16 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PKHeX, Version=1.0.5.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\PKHeX.1.0.5\lib\net40\PKHeX.exe</HintPath>
+    <Reference Include="PKHeX, Version=1.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\PKHeX.1.0.6\lib\net40\PKHeX.exe</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SkyEditor.Core, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SkyEditor.Core.4.0.3-CI00013\lib\portable45-net45+win8+wpa81\SkyEditor.Core.dll</HintPath>
+      <HintPath>..\packages\SkyEditor.Core.4.0.3-CI00016\lib\portable45-net45+win8+wpa81\SkyEditor.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SkyEditor.Core.Windows, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SkyEditor.Core.Windows.4.0.3-CI00013\lib\net46\SkyEditor.Core.Windows.dll</HintPath>
+      <HintPath>..\packages\SkyEditor.Core.Windows.4.0.3-CI00016\lib\net46\SkyEditor.Core.Windows.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SkyEditor.SaveEditor, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
@@ -137,7 +137,9 @@
     <Compile Include="PKHeXSaveFileSaver.vb" />
     <Compile Include="PluginInfo.vb" />
     <Compile Include="PokemonFileTypeDetector.vb" />
+    <Compile Include="ViewModels\BagViewModel.vb" />
     <Compile Include="ViewModels\Gen6GeneralViewModel.vb" />
+    <Compile Include="ViewModels\InventoryItem.vb" />
     <Compile Include="Views\Gen6SaveFileView.xaml.vb">
       <DependentUpon>Gen6SaveFileView.xaml</DependentUpon>
     </Compile>

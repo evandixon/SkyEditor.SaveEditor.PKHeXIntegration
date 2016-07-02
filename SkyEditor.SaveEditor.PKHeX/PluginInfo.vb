@@ -24,7 +24,7 @@ Public Class PluginInfo
     Public Overrides Sub Load(manager As PluginManager)
         MyBase.Load(manager)
 
-        manager.LoadRequiredPlugin(New SkyEditor.SaveEditor.PluginDefinition, Me)
+        manager.LoadRequiredPlugin(New SkyEditor.SaveEditor.UI.WPF.SkyEditorInfo, Me)
         manager.CurrentIOUIManager.RegisterIOFilter("main", My.Resources.Language.Gen6SaveFiles)
     End Sub
 End Class
